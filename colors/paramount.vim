@@ -196,7 +196,10 @@ call s:h("htmlH4",        {"bg": s:bg, "fg": s:norm})
 call s:h("htmlH5",        {"bg": s:bg, "fg": s:norm})
 call s:h("htmlH6",        {"bg": s:bg, "fg": s:norm})
 
+call s:h("jsxTag",        {"fg": s:norm_subtle})
+call s:h("jsxCloseTag",        {"fg": s:norm_subtle})
 call s:h("jsxTagName",        {"fg": s:norm_subtle})
+call s:h("jsxjsxAttrib",        {"fg": s:norm})
 
 " Signify, git-gutter
 hi link SignifySignAdd              LineNr
