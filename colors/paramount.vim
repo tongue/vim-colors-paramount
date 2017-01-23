@@ -54,6 +54,7 @@ if &background == "dark"
   let s:bg_very_subtle  = s:subtle_black
   let s:norm            = s:lighter_gray
   let s:norm_subtle     = s:medium_gray
+  let s:norm_very_subtle     = s:light_gray
   let s:norm_sharp     = s:lightest_gray
   let s:purple          = s:light_purple
   let s:cyan            = s:light_cyan
@@ -210,7 +211,7 @@ call s:h("javaScriptBraces", {"fg": s:norm_sharp})
 call s:h("jsxTag",        {"fg": s:norm_subtle})
 call s:h("jsxCloseTag",        {"fg": s:norm_subtle})
 call s:h("jsxTagName",        {"fg": s:norm_subtle})
-call s:h("jsxjsxAttrib",        {"fg": s:norm})
+call s:h("jsxjsxAttrib",        {"fg": s:norm_very_subtle})
 call s:h("jsxEqual",        {"fg": s:norm_subtle})
 
 " Signify, git-gutter
