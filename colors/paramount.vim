@@ -54,6 +54,7 @@ if &background == "dark"
   let s:bg_very_subtle  = s:subtle_black
   let s:norm            = s:lighter_gray
   let s:norm_subtle     = s:medium_gray
+  let s:norm_sharp     = s:lightest_gray
   let s:purple          = s:light_purple
   let s:cyan            = s:light_cyan
   let s:green           = s:light_green
@@ -196,10 +197,21 @@ call s:h("htmlH4",        {"bg": s:bg, "fg": s:norm})
 call s:h("htmlH5",        {"bg": s:bg, "fg": s:norm})
 call s:h("htmlH6",        {"bg": s:bg, "fg": s:norm})
 
+" hi! link  GruvboxFg1
+" hi! link javaScriptFunction GruvboxAqua
+" hi! link javaScriptIdentifier GruvboxRed
+" hi! link javaScriptMember GruvboxBlue
+" hi! link javaScriptNumber GruvboxPurple
+" hi! link javaScriptNull GruvboxPurple
+" hi! link javaScriptParens GruvboxFg3
+
+call s:h("javaScriptBraces", {"fg": s:norm_sharp})
+
 call s:h("jsxTag",        {"fg": s:norm_subtle})
 call s:h("jsxCloseTag",        {"fg": s:norm_subtle})
 call s:h("jsxTagName",        {"fg": s:norm_subtle})
 call s:h("jsxjsxAttrib",        {"fg": s:norm})
+call s:h("jsxEqual",        {"fg": s:norm_subtle})
 
 " Signify, git-gutter
 hi link SignifySignAdd              LineNr
